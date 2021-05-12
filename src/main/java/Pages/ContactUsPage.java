@@ -3,7 +3,6 @@ package Pages;
 import org.openqa.selenium.WebElement;
 
 public class ContactUsPage extends BasePage {
-    public static MainPage mainPage;
 
     public static String CONTACT_US_HEADER = "//h1[text()='Contact us']";
     public static String EMAIL_FIELD = "//input[@name='email']";

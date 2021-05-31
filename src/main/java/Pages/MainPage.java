@@ -21,7 +21,8 @@ public class MainPage extends BasePage {
     private static final String BLOG_ALL_TOPICS = "//*[@id='BlogTagFilter']";
     private static final String BLOG_ALL_TOPICS_HOLIDAY = "//*[text()='holiday']";
     private static final String LOGIN = "//*[@class='icon icon-login']";
-
+    private static final String CART = "//a[@href='/cart']";
+    private static final String CREATE_ACCOUNT_BUTTON = "//a[text()='Create account']";
 
     //   private static final String TEXT_TO_CONTACT_US = "//input[type='text']";
 
@@ -78,5 +79,14 @@ public class MainPage extends BasePage {
     public LogInPage logInPage() {
         clickElementByXpath(LOGIN);
         return new LogInPage();
+    }
+    public CartPage cartPage(){
+       clickElementByXpath(CART);
+       return new CartPage();
+    }
+    public CreateAccount createAccount() {
+        clickElementByXpath(LOGIN);
+        clickElementByXpath(CREATE_ACCOUNT_BUTTON);
+        return new CreateAccount();
     }
 }

@@ -43,15 +43,16 @@ public class TestPages {
         webDriver = null;
     }
 
+    // Home PAge Logo Test
     @Test
     public void HomePageTest() {
         logger.info("Home page load test");
         WebElement mainPagelogoExists = mainPage.mainPage();
         mainPage.takeScreensShot("HomePageTest");
         assertNotNull(mainPagelogoExists);
-
     }
 
+    // Contact Us Menu Test
     @Test
     public void ContactUsPageTest() {
         logger.info("Contact us load page test");
@@ -63,18 +64,18 @@ public class TestPages {
         assertNotNull(contactUsPageEmailField);
         WebElement errorMessage = contactUsPage.contactUsErrorMessage();
         assertNotNull(errorMessage);
-
     }
 
+    //FAQs Menu Test
     @Test
     public void FaqsTest() {
         logger.info("FAQs load page test");
         FAQsPage faQsPage = mainPage.faqsPage();
         WebElement faqsPageHeader = faQsPage.faqsNamePageHeaderExist();
         assertNotNull(faqsPageHeader);
-
     }
 
+    // Books By Language Menu Test
     @Test
     public void BooksByLanguageTest() {
         logger.info("Books by language drop list test");
@@ -83,15 +84,16 @@ public class TestPages {
         assertNotNull(englishOnlyHeader);
     }
 
+    //eBooks By Language Menu Test
     @Test
     public void eBooksByLanguageTest() {
         logger.info("eBooks by language drop list test");
         EBooksByLanguage eBooksByLanguage = mainPage.eBooksByLanguage();
         WebElement eBooksInEnglishOnlyHeader = eBooksByLanguage.eBooksInEglishOnlyHeaderExist();
         assertNotNull(eBooksInEnglishOnlyHeader);
-
     }
 
+    //Resources Menu Test
     @Test
     public void ResourcesTest() {
         logger.info("Resources drop list test");
@@ -100,15 +102,17 @@ public class TestPages {
         assertNotNull(resourcesVideoHeader);
     }
 
+    //All Languages Menu Test
     @Test
-    public void AllLanguagesTest() {
+    public void AllLanguagesTest() throws InterruptedException {
         logger.info("All languages drop list test");
         AllLanguages allLanguages = mainPage.allLanguages();
         WebElement allLanguagesHebrewHeader = allLanguages.allLanguagesHebrewHeaderExist();
+        Thread.sleep(2000);
         assertNotNull(allLanguagesHebrewHeader);
-
     }
 
+    // Blog Page Test
     @Test
     public void BlogPageTest() {
         logger.info("Blog load page test");
@@ -117,9 +121,9 @@ public class TestPages {
         assertNotNull(blogHeader);
         WebElement holiday = blogPage.holidayDropListExist();
         assertNotNull(holiday);
-
     }
 
+    // LogIn Page Test
     @Test
     public void LogInTest() {
         logger.info("LogIn page test");
@@ -130,6 +134,29 @@ public class TestPages {
         assertNotNull(element);
         WebElement incorrectEmailOrPassword = logInPage.logInErrorMessage();
         assertNotNull(incorrectEmailOrPassword);
+    }
 
+    // Create Account Test
+    @Test
+    public void CreateAccountTest() throws InterruptedException {
+        CreateAccount createAccount = mainPage.createAccount();
+        WebElement firstName = createAccount.firstNameField();
+        assertNotNull(firstName);
+        WebElement lastName = createAccount.lastNameField();
+        assertNotNull(lastName);
+        WebElement email = createAccount.emailField();
+        assertNotNull(email);
+        WebElement password = createAccount.passwordField();
+        assertNotNull(password);
+    }
+
+    // Cart Test
+    @Test
+    public void CartTest() {
+        CartPage cartPage = mainPage.cartPage();
+        WebElement yourCartHeader = cartPage.yourCartHeaderExist();
+        assertNotNull(yourCartHeader);
+        WebElement homePageLogo = cartPage.continueShoppingButton();
+        assertNotNull(homePageLogo);
     }
 }

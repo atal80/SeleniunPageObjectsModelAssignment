@@ -102,15 +102,14 @@ public class TestPages {
         assertNotNull(resourcesVideoHeader);
     }
 
-    //All Languages Menu Test
-    @Test
-    public void AllLanguagesTest() throws InterruptedException {
-        logger.info("All languages drop list test");
-        AllLanguages allLanguages = mainPage.allLanguages();
-        WebElement allLanguagesHebrewHeader = allLanguages.allLanguagesHebrewHeaderExist();
-        Thread.sleep(2000);
-        assertNotNull(allLanguagesHebrewHeader);
-    }
+//    //All Languages Menu Test
+//    @Test
+//    public void AllLanguagesTest() {
+//        logger.info("All languages drop list test");
+//        AllLanguages allLanguages = mainPage.allLanguages();
+//        WebElement allLanguagesHebrewHeader = allLanguages.allLanguagesHebrewHeaderExist();
+//        assertNotNull(allLanguagesHebrewHeader);
+//    }
 
     // Blog Page Test
     @Test

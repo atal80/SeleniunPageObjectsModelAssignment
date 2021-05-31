@@ -104,10 +104,11 @@ public class TestPages {
 
     //All Languages Menu Test
     @Test
-    public void AllLanguagesTest() {
+    public void AllLanguagesTest() throws InterruptedException {
         logger.info("All languages drop list test");
         AllLanguages allLanguages = mainPage.allLanguages();
         WebElement allLanguagesHebrewHeader = allLanguages.allLanguagesHebrewHeaderExist();
+        Thread.sleep(2000);
         assertNotNull(allLanguagesHebrewHeader);
     }
 

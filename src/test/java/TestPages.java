@@ -123,17 +123,17 @@ public class TestPages {
     }
 
     // LogIn Page Test
-    @Test
-    public void LogInTest() {
-        logger.info("LogIn page test");
-        LogInPage logInPage = mainPage.logInPage();
-        WebElement logInHeader = logInPage.logInHeaderExist();
-        assertNotNull(logInHeader);
-        WebElement element = logInPage.emailField();
-        assertNotNull(element);
-        WebElement incorrectEmailOrPassword = logInPage.logInErrorMessage();
-        assertNotNull(incorrectEmailOrPassword);
-    }
+//    @Test
+//    public void LogInTest() {
+//        logger.info("LogIn page test");
+//        LogInPage logInPage = mainPage.logInPage();
+//        WebElement logInHeader = logInPage.logInHeaderExist();
+//        assertNotNull(logInHeader);
+//        WebElement element = logInPage.emailField();
+//        assertNotNull(element);
+//        WebElement incorrectEmailOrPassword = logInPage.logInErrorMessage();
+//        assertNotNull(incorrectEmailOrPassword);
+//    }
 
     // Create Account Test
     @Test

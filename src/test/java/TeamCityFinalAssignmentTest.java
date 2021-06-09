@@ -66,8 +66,11 @@ public class TeamCityFinalAssignmentTest {
 
         //Cart test
         CartPage cartPage = mainPage.cartPage();
-        WebElement yourCartHeader = cartPage.yourCartHeaderExist();
-        assertNotNull(yourCartHeader);
+
+        WebElement englishBookInCartExist = cartPage.englishBookCartTest();
+
+        WebElement russianBookInCartExist =  cartPage.russianBookCartTest();
+
         WebElement homePageLogo = cartPage.continueShoppingButton();
         assertNotNull(homePageLogo);
     }

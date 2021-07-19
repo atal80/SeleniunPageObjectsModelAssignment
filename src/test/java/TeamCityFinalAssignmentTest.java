@@ -65,13 +65,13 @@ public class TeamCityFinalAssignmentTest {
         russianBookAddToCart.click();
 
         //Cart test
-//        CartPage cartPage = mainPage.cartPage();
-//
-//        WebElement englishBookInCartExist = cartPage.englishBookCartTest();
-//
-//        WebElement russianBookInCartExist =  cartPage.russianBookCartTest();
-//
-//        WebElement booksPageLogo = cartPage.continueShoppingButton();
-//        assertNotNull(booksPageLogo);
+        CartPage cartPage = mainPage.cartPage();
+
+        WebElement englishBookInCartExist = cartPage.englishBookCartTest();
+
+        WebElement russianBookInCartExist =  cartPage.russianBookCartTest();
+
+        WebElement booksPageLogo = cartPage.continueShoppingButton();
+        assertNotNull(booksPageLogo);
     }
 }

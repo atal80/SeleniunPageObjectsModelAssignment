@@ -71,7 +71,7 @@ public class TeamCityFinalAssignmentTest {
 
         WebElement russianBookInCartExist =  cartPage.russianBookCartTest();
 
-        WebElement homePageLogo = cartPage.continueShoppingButton();
-        assertNotNull(homePageLogo);
+        WebElement booksPageLogo = cartPage.continueShoppingButton();
+        assertNotNull(booksPageLogo);
     }
 }

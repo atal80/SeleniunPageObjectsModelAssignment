@@ -19,7 +19,7 @@ public class MainPage extends BasePage {
     private static final String ALL_LANGUAGES_HEBREW_DROP_MENU = "//*[@id='SiteNavLabel-all-languages']/ul/li[13]/a";
     private static final String ALL_LANGUAGES_ENGLISH_DROP_MENU = "//*[@id='SiteNavLabel-all-languages']/ul/li[8]/a";
     private static final String ALL_LANGUAGES_RUSSIAN_DROP_MENU = "//*[@id='SiteNavLabel-all-languages']/ul/li[26]/a";
-    private static final String BLOG = "//*[@id='AccessibleNav']/ul/li[11]/a";
+    private static final String BLOG = "//*[@id='AccessibleNav']/ul/li[12]/a";
     private static final String BLOG_ALL_TOPICS = "//*[@id='BlogTagFilter']";
     private static final String BLOG_ALL_TOPICS_HOLIDAY = "//*[text()='holiday']";
     private static final String LOGIN = "//*[@class='icon icon-login']";

@@ -118,8 +118,8 @@ public class TestPages {
         BlogPage blogPage = mainPage.blogPage();
         WebElement blogHeader = blogPage.blogPageNameHeaderExist();
         assertNotNull(blogHeader);
-        WebElement holiday = blogPage.holidayDropListExist();
-        assertNotNull(holiday);
+//        WebElement holiday = blogPage.holidayDropListExist();
+//        assertNotNull(holiday);
     }
 
     // LogIn Page Test
@@ -162,7 +162,7 @@ public class TestPages {
         CartPage cartPage = mainPage.cartPage();
         WebElement yourCartHeader = cartPage.yourCartHeaderExist();
         assertNotNull(yourCartHeader);
-        WebElement homePageLogo = cartPage.continueShoppingButton();
+        WebElement homePageLogo = cartPage.letsGetReadingButton();
         assertNotNull(homePageLogo);
     }
 

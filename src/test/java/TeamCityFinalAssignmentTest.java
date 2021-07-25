@@ -27,8 +27,6 @@ public class TeamCityFinalAssignmentTest {
     public static void BeforeAllSetup() {
         mainPage = new MainPage();
         webDriver = ShareDriver.getWebDriver();
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
 
     }
 

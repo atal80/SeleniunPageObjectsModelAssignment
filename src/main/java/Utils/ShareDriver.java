@@ -28,6 +28,8 @@ public class ShareDriver {
     public static void closeDriver() {
         if (webDriver != null) {
             webDriver.close();
+            webDriver = null;
+
         }
     }
 }

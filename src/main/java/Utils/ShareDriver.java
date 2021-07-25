@@ -19,7 +19,7 @@ public class ShareDriver {
  if (webDriver == null) {
 
         WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
+        webDriver = new ChromeDriver(options);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     }
